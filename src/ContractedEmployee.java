@@ -38,5 +38,3 @@ public class ContractedEmployee  extends Employee {
     return 0;
   }
 }
-
-
