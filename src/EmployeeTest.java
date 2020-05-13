@@ -9,7 +9,6 @@ public class EmployeeTest {
   public void testSalariedEmployee() {
     SalariedEmployee employee1 = new SalariedEmployee("ID123", "Petro", "SSN123");
     employee1.setFixedMonthlyPayment(2500);
-    System.out.println(employee1.fixedMonthlyPayment);
 
     assertEquals(employee1.getName(), "Petro", "The name is wrong for " + employee1);
 
@@ -54,7 +53,7 @@ public class EmployeeTest {
     assertTrue(employee1.toString().contains("Volodymyr"),
         "toString method does not contains employee's name: " + employee1);
 
-    assertTrue(employee1.toString().contains("37.995"), ///Поменял значение. Возможно нужно было привести к целому числу?)
+    assertTrue(employee1.toString().contains("38.00"), ///Поменял значение. Возможно нужно было привести к целому числу?)
         "toString method does not contains employee's average monthly salary of 38.00: "
             + employee1);
   }
