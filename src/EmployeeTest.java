@@ -53,7 +53,7 @@ public class EmployeeTest {
     assertTrue(employee1.toString().contains("Volodymyr"),
         "toString method does not contains employee's name: " + employee1);
 
-    assertTrue(employee1.toString().contains("38.00"), ///Поменял значение. Возможно нужно было привести к целому числу?)
+    assertTrue(employee1.toString().contains("38.00"),
         "toString method does not contains employee's average monthly salary of 38.00: "
             + employee1);
   }
